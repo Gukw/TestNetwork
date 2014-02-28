@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "MyRequest.h"
+#import "MyCell.h"
+@interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
+    NSTimer *_timer;
+    IBOutlet UIButton *_buttonStart;
+    IBOutlet UIButton *_buttonPasue;
+    IBOutlet UIButton *_buttonTotal;
+    IBOutlet UIButton *_buttonReset;
+    IBOutlet UITableView *_tableView;
+    NSArray *_arrayData;
+    NSMutableArray *_arrayResult;
+}
 
 @end
