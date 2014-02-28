@@ -84,7 +84,7 @@
             }
         }
     }];
-    NSString *message = @"非200统计，";
+    NSString *message = @"未成功返回的请求：";
     for(NSInteger i = 0; i<_arrayData.count; i++){
         NSString *m = [NSString stringWithFormat:@"%@:%@个；", _arrayData[i][@"name"], dic[@(i)]];
         message = [message stringByAppendingString:m];

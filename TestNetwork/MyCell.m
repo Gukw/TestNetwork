@@ -47,7 +47,7 @@
 }
 -(void)setDuration:(NSInteger)duration{
     _duration= duration;
-    if(_duration > 200){
+    if(_duration > 1000){
         [_buttonDuration setBackgroundColor:[UIColor colorWithRed:255/255.0 green:103/255.0 blue:153/255.0 alpha:1]];
     }else{
         [_buttonDuration setBackgroundColor:[UIColor colorWithRed:224/255.0 green:224/255.0 blue:224/255.0 alpha:1]];
